@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporeveil Studio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        p.description {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .game-card {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 25px;
+        }
+
+        .game-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 0;
+            color: var(--text-primary);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .privacy-modal {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Sporeveil Studio</h1>
+            <p class="description">Sporeveil Studio is an indie game studio driven by creativity, innovation, and a passion for great games.</p>
+        </header>
+
+        <main>
+            <div class="section-title">Games</div>
+            <div class="game-card">
+                <p class="game-title">Embers of Scap</p>
+            </div>
+
+            <div class="section-title">Contact & Support</div>
+            <div class="contact-info">
+                <span>Email: <a href="mailto:sporeveil@gmail.com">sporeveil@gmail.com</a></span>
+            </div>
+        </main>
+
+        <footer>
+            <div class="privacy-modal">
+                <a href="#privacy">Privacy Policy</a>
+            </div>
+            <p style="margin-top: 10px;">&copy; Sporeveil Studio. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Simple Privacy Policy Anchor -->
+    <div id="privacy" style="display:none; max-width: 600px; margin: 20px auto; padding: 20px; color: var(--text-secondary);">
+        <h2>Privacy Policy</h2>
+        <p>Sporeveil Studio respects your privacy. We do not collect or share personal information from our players without permission. Our games may use third-party services like Google AdMob to display advertisements, which may collect anonymous data for personalization and analytics.</p>
+        <p>Contact us at sporeveil@gmail.com for any privacy concerns.</p>
+    </div>
+
+</body>
+</html>
